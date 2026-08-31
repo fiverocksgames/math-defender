@@ -1,0 +1,8 @@
+---
+layout: math-defender-default
+title: 개발 일지
+lang: ko
+translation_url: /en/journals/
+description: Math Defender 개발 일지 목록
+---
+<main><section class="hero"><div class="wrap"><p class="meta">DEVELOPMENT JOURNAL</p><h1>Math Defender 개발 일지</h1><p>최근 글부터 볼 수 있습니다. 각 글에는 게임을 만들면서 실제로 고민하고 결정한 과정이 담겨 있습니다.</p></div></section><section class="section"><div class="wrap"><div class="card-list">{% assign docs = site.math_defender_journals | where: "lang", "ko" | sort: "date" | reverse %}{% for doc in docs %}<a class="card" href="{{ doc.url | relative_url }}"><p class="meta">{{ doc.date | date: "%Y-%m-%d" }}{% if doc.category %} · {{ doc.category }}{% endif %}</p><h2>{{ doc.title }}</h2><p class="summary">{{ doc.summary }}</p></a>{% endfor %}</div></div></section></main>

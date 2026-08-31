@@ -1,0 +1,8 @@
+---
+layout: math-defender-default
+title: Development Journal
+lang: en
+translation_url: /journals/
+description: Math Defender development journal
+---
+<main><section class="hero"><div class="wrap"><p class="meta">DEVELOPMENT JOURNAL</p><h1>Math Defender Development Journal</h1><p>Entries are listed newest first. They record the decisions, doubts, experiments, and actual work behind the game.</p></div></section><section class="section"><div class="wrap"><div class="card-list">{% assign docs = site.math_defender_journals | where: "lang", "en" | sort: "date" | reverse %}{% for doc in docs %}<a class="card" href="{{ doc.url | relative_url }}"><p class="meta">{{ doc.date | date: "%Y-%m-%d" }}{% if doc.category %} · {{ doc.category }}{% endif %}</p><h2>{{ doc.title }}</h2><p class="summary">{{ doc.summary }}</p></a>{% endfor %}</div></div></section></main>
