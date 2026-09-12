@@ -6,6 +6,7 @@ This repository is the canonical public deployment repository for Math Defender 
 - Public deployment: `fiverocksgames/math-defender`
 - Pages URL: `https://fiverocksgames.github.io/math-defender/`
 - Journal URL: `https://fiverocksgames.github.io/math-defender/journals/`
+- English journal URL: `https://fiverocksgames.github.io/math-defender/en/journals/`
 - Branch: `main`
 - Formal directory: repository root
 - Prerelease directory: not adopted for the journal site
@@ -19,21 +20,26 @@ The WebGL game build remains outside this journal migration and continues to fol
 
 ## Migration compatibility
 
-The previous journal URL under `https://fiverocksgames.github.io/games/math-defender/journals/` remains the canonical compatibility entry point until the new Pages deployment is verified. Historical journal screenshots continue to be served from the existing `/games/math-defender/assets/journals/` paths so old links and articles do not break.
+The previous journal URL under `https://fiverocksgames.github.io/games/math-defender/journals/` remains a compatibility surface for existing links while new journal authoring and discovery use this repository's canonical journal URLs.
 
-The old journal pages MUST NOT be removed or redirected until the new Pages deployment succeeds and the new Korean/English journal URLs, navigation, styles, and images have been verified.
+Historical journal screenshots continue to be served from the existing `/games/math-defender/assets/journals/` paths so old links and migrated articles do not break. These assets MUST NOT be removed or relocated without separate migration evidence that verifies the historical URLs continue to resolve.
+
+The legacy company-site collection, layouts, configuration, and individual journal entry routes may remain while compatibility is required. They SHOULD NOT receive new journal entries after the canonical authoring cutover. Any later removal MUST be backed by explicit evidence that all dependent routes have a verified replacement or redirect.
 
 ## Activation status
 
-Repository-side migration is prepared. Initial Pages workflow run `33389466553` failed at `actions/configure-pages@v5` because GitHub Pages is not yet enabled/configured for this repository with GitHub Actions as the source.
+GitHub Pages activation is verified.
 
-Automatic deployment on pushes is intentionally paused while this setting is unavailable. The workflow is `workflow_dispatch`-only until activation succeeds, preventing unrelated content commits from repeatedly producing known-failing deployment runs.
+- Migration source commit: `bb3bb1d31e948f613467dbd737f742c02955faf7`
+- Pages workflow run: `33389466553`
+- Verified attempt: `2`
+- Result: `success`
 
-Required activation gate:
+The current `Deploy Math Defender Journal Pages` workflow remains manually triggered through `workflow_dispatch`; automatic journal publication has not been adopted by this profile.
 
-1. enable GitHub Pages for `fiverocksgames/math-defender` with source **GitHub Actions**;
-2. run `Deploy Math Defender Journal Pages`;
-3. verify the new site at `/math-defender/`, `/math-defender/journals/`, and `/math-defender/en/journals/` plus all article and image links;
-4. only then replace legacy journal pages with redirects.
+The canonical Korean and English journal entry points are:
 
-The legacy screenshot assets remain intentionally outside this cutover gate and should continue to be served until a separate binary-asset migration is completed and verified.
+- `https://fiverocksgames.github.io/math-defender/journals/`
+- `https://fiverocksgames.github.io/math-defender/en/journals/`
+
+Company-site integration is handled as a compatibility/consumer concern. The company homepage may link directly to these canonical URLs while preserving existing `/games/math-defender/journals/**` routes and historical screenshot assets until their compatibility obligations are independently retired with evidence.
