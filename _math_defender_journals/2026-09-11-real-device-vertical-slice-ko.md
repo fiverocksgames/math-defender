@@ -20,6 +20,10 @@ Result까지 가서 다시 시작할 수 있었다.
 
 그런데 실제 Android 휴대폰에 넣어보니 다시 이야기가 달라졌다.
 
+![실제 기기 기준으로 다시 다듬은 Math Defender Problem 화면](https://fiverocksgames.github.io/math-defender/assets/journals/2026-09-11/problem.png)
+
+*실기기 검증 과정의 Problem 단계 캡처. 에디터에서 보이던 것과 실제 휴대폰에서 읽고 누를 수 있는 것은 같은 문제가 아니었다.*
+
 처음에는 문제 화면이 너무 작았다.
 전투판은 화면에 제대로 들어오지 않았고,
 Preparation에서는 보이는 버튼을 눌러도 실제 배치 흐름이 자연스럽게 이어지지 않았다.
@@ -43,6 +47,10 @@ Preparation에서는 보이는 버튼을 눌러도 실제 배치 흐름이 자�
 
 휴대폰에서는 이 흐름이 생각보다 자주 헷갈렸다.
 그래서 화면 아래 Hero Bar에서 영웅 카드를 바로 끌어 전투판 칸에 놓는 Drag-to-Place 방식으로 바꿨다.
+
+![Hero Bar에서 전투판으로 바로 끌어 놓는 Preparation 화면](https://fiverocksgames.github.io/math-defender/assets/journals/2026-09-11/preparation.png)
+
+*Preparation 단계. 여러 번 눌러 배치하던 흐름 대신 Hero Bar의 카드를 전투판 칸으로 바로 끌어 놓는 방식으로 바뀌었다.*
 
 유효한 칸 위에서는 피드백이 보이고,
 놓으면 즉시 배치되고,
@@ -71,8 +79,17 @@ Journal Capture가 성공해도 실제 손가락으로 배치가 안 되면 완�
 
 영웅을 끌어 놓고,
 전투를 시작하고,
+
+![배치를 마치고 실제 전투가 진행되는 Battle 화면](https://fiverocksgames.github.io/math-defender/assets/journals/2026-09-11/battle.png)
+
+*Battle 단계. 실기기에서 배치를 끝낸 뒤 전투까지 이어지는 흐름을 다시 확인했다.*
+
 Result까지 간 다음,
 Restart Stage를 눌렀다.
+
+![전투를 끝내고 다시 시작할 수 있는 Result 화면](https://fiverocksgames.github.io/math-defender/assets/journals/2026-09-11/result.png)
+
+*Result 단계. 여기서 끝나는 것이 아니라 Restart Stage 뒤 깨끗한 Problem 상태로 돌아가는 것까지가 이번 검증 범위였다.*
 
 게임은 깨끗한 Problem 상태로 돌아왔다.
 
