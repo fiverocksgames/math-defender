@@ -35,7 +35,9 @@ GitHub Pages activation is verified.
 - Verified attempt: `2`
 - Result: `success`
 
-The current `Deploy Math Defender Journal Pages` workflow remains manually triggered through `workflow_dispatch`; automatic journal publication has not been adopted by this profile.
+The `Deploy Math Defender Journal Pages` workflow is adopted for automatic journal publication on `push` to `main`. `workflow_dispatch` remains available for manual recovery or republication.
+
+This automatic trigger applies only to the intentionally public Markdown/Jekyll journal site in this repository. It does not adopt automatic Unity/WebGL prerelease or formal game deployment.
 
 The canonical Korean and English journal entry points are:
 
