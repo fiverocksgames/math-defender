@@ -23,5 +23,6 @@ Prepared a reviewable KO/EN journal reference update for the 2026-09-23 five-pha
 
 ## Open questions / 미해결
 
-- Source capture implementation PR `fiverocks-dev/math-defender#94` remains unmerged at the time of preparation; confirm its accepted status before merging the public image/document PRs.
-- Merge public image PR #12 before this dependent journal-reference PR, and only after separate human approval. Pages renders new image links only after both prerequisites are merged and deployed.
+- Source capture implementation PR `fiverocks-dev/math-defender#94` was merged on 2026-09-24 as squash commit `dabd42f2a9103ea157b43e3c74209cdf9694fab2` after Project Lead approval.
+- Public image PR #12 was merged on 2026-09-24 as commit `31d2fc253944f96ad5bbf764c9002c555173f46a`; the five SHA-suffixed PNG paths now exist on `main`.
+- Before merging this journal-reference PR, recheck the exact five public image paths and the paired KO/EN rendered links on Pages. This documentation update does not claim Android pixel equivalence.
