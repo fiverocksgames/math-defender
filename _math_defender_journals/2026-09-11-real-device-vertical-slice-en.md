@@ -21,9 +21,11 @@ At the time, that felt like a major line to cross.
 
 Then we put the game on a real Android phone, and the story changed again.
 
-![Math Defender Problem screen after the real-device UI pass](https://fiverocksgames.github.io/math-defender/assets/journals/2026-09-11/problem.png)
+*The screenshots below are journal illustrations reproduced later in Unity Play Mode, not photographs or pixel-identical captures from the Android device.*
 
-*Problem phase during the real-device validation pass. Looking fine in the editor and being readable and tappable on a phone turned out to be different problems.*
+![Math Defender Problem screen after the real-device UI pass](https://fiverocksgames.github.io/math-defender/assets/journals/2026-09-11/problem-388c8bd4.png)
+
+*Problem phase reproduced in Play Mode to illustrate the real-device validation pass. Looking fine in the editor and being readable and tappable on a phone turned out to be different problems.*
 
 At first, the Problem screen was simply too small.
 The battlefield did not fit the screen properly.
@@ -33,6 +35,11 @@ In Preparation, visible controls did not lead to a usable placement flow.
 
 We fixed one round and tested again.
 The orientation and scale improved, but Scout was still too small.
+
+![Scout phase reproduced in Play Mode](https://fiverocksgames.github.io/math-defender/assets/journals/2026-09-11/scout-388c8bd4.png)
+
+*Journal Play Mode capture of Scout. The real-device check identified problems with its size and legibility.*
+
 We fixed that too.
 
 Then touch input was reaching the game, but heroes still would not place.
@@ -47,7 +54,7 @@ The old flow was roughly:
 That multi-step interaction was much less clear on a phone than it had seemed in the editor.
 So we changed it to Drag-to-Place: drag a hero card from the Hero Bar at the bottom of the screen and drop it directly onto a battlefield cell.
 
-![Preparation screen with direct drag-to-place from the Hero Bar](https://fiverocksgames.github.io/math-defender/assets/journals/2026-09-11/preparation.png)
+![Preparation screen with direct drag-to-place from the Hero Bar](https://fiverocksgames.github.io/math-defender/assets/journals/2026-09-11/preparation-388c8bd4.png)
 
 *Preparation phase after the interaction change. Instead of several taps, a hero card moves directly from the Hero Bar onto a battlefield cell.*
 
@@ -76,16 +83,16 @@ Then, on September 11, we ran the latest build on a real Android device again.
 We dragged heroes into place,
 started Battle,
 
-![Battle screen after a successful real-device placement flow](https://fiverocksgames.github.io/math-defender/assets/journals/2026-09-11/battle.png)
+![Battle screen after a successful real-device placement flow](https://fiverocksgames.github.io/math-defender/assets/journals/2026-09-11/battle-388c8bd4.png)
 
-*Battle phase. The real-device pass verified that placement could lead all the way into an actual battle.*
+*Battle phase reproduced in Play Mode. The separate real-device pass verified that placement could lead all the way into an actual battle.*
 
 reached Result,
 and pressed Restart Stage.
 
-![Result screen used to verify the restart path](https://fiverocksgames.github.io/math-defender/assets/journals/2026-09-11/result.png)
+![Result screen used to verify the restart path](https://fiverocksgames.github.io/math-defender/assets/journals/2026-09-11/result-388c8bd4.png)
 
-*Result phase. The acceptance check did not stop here: Restart Stage also had to return to a clean Problem state.*
+*Result phase reproduced in Play Mode. The separate device acceptance check also required Restart Stage to return to a clean Problem state.*
 
 The game returned to a clean Problem state.
 
